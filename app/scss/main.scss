@@ -1,0 +1,101 @@
+@import '../../node_modules/scss-reset/reset';
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Montserrat&display=swap');
+
+@import "variables";
+@import "social";
+
+body {
+    width: 960px;
+    margin: 50px auto 50px;
+    color: $light-grey;
+    background-color: $dark-grey;
+}
+
+.title {
+    display: flex;
+    color: $white;
+
+    img {
+        object-fit: contain;
+    }
+
+    h2 {
+        margin: 2rem 1rem 2rem 1rem;
+        text-transform: uppercase;
+    }
+}
+
+#main {
+    display: flex;
+
+    .text {
+        flex: 1;
+        padding-right: 1rem;
+        
+        h3 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+.form {
+    flex: 2;
+    background-color: $dark-grey;
+    width: 100%;
+}
+
+.input-form {
+    box-sizing: border-box;
+    display: flex;
+
+    div {
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        input {
+            width: 100%;
+            border: $light-grey solid 1px;
+            padding: .8rem;
+        }
+    }
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="url"],
+textarea {
+    background-color: $dark-grey;
+}
+
+textarea {
+    width: 100%;
+    border: $light-grey solid 1px;
+    resize: none;
+    padding: .8rem;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+    color: rgba(255, 255, 255, 0.548);
+    background-color: grey;
+    border: 1px solid $light-grey;
+    padding: .6rem 1.5rem .4rem 1.5rem;
+    margin-left: .2rem;
+    margin-bottom: 1rem;
+}
+
+hr {
+    margin-top: 2rem;
+    background-color: $light-grey;
+    margin-bottom: 2rem;
+}

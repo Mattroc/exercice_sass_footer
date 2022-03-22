@@ -1,0 +1,24 @@
+$dark-grey: #292929;
+$white: #E3E3E3;
+$light-grey: #949494;
+
+$font-title: 'Montserrat', sans-serif;
+$font-text: 'Crimson Pro', serif;
+
+h2 {
+    font-family: $font-title;
+}
+
+h3 {
+    font-size: 14px;
+    font-family: $font-title;
+}
+
+p {
+    font-size: 12px;
+    font-family: $font-title;
+}
+
+input[type="submit"] {
+    font-family: $font-title;
+}

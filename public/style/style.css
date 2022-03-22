@@ -1,0 +1,17 @@
+/* Error: Expected '.
+ *   ,
+ * 1 | @import 'node_modules/scss-reset/reset;
+ *   |                                        ^
+ *   '
+ *   app\scss\main.scss 1:40  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected '.\a   \2577 \a 1 \2502  @import 'node_modules/scss-reset/reset;\a   \2502                                         ^\a   \2575 \a   app\\scss\\main.scss 1:40  root stylesheet";
+}
